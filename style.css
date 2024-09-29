@@ -1,0 +1,273 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+/* Se usa la siguiente regla para asegurar la compatibilidad con el navegador: */
+@-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}}
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background: #51EBD3;
+    font-family: 'Montserrat', sans-serif;
+}
+img, video {
+    width: 100%;
+}
+
+
+/*** NAV ***/
+
+    #menu {
+        margin: 20px;
+    }
+    #menu ul {
+        list-style:none;
+        margin:0;
+        padding:0;
+    }
+    /* enlaces del menu */
+    #menu ul a {
+        display:block;
+        color: black;
+        text-decoration:none;
+        font-weight:400;
+        font-size:1rem;
+        padding:10px;
+    }
+    /* items del menu */
+    #menu ul li {
+        position:relative;
+        float:left;
+        margin:0 0 0 10px;
+        padding:0;
+    }
+    /* efecto al pasar el ratón por los items del menu */
+    #menu ul li:hover {
+        background: white;
+    }
+    /* menu desplegable */
+    .fila {
+        display:none;
+        position:absolute;
+        top:100%;
+        left:0;
+        padding:0;
+    }
+    /* items del menu desplegable */
+    .fila li {
+        float:none;
+        width:150px
+    }
+    /* enlaces de los items del menu desplegable */
+    .fila a {
+        line-height:120%;
+        padding:10px 15px;
+    }
+    /* items del menu desplegable al pasar el ratón */
+    #menu ul li:hover > ul {
+        display:block;
+    }
+
+/*** HEADER ***/
+
+    #logo {
+        width: 75px;
+        margin: auto;
+    }
+
+/*** ARTICLE ***/
+
+    article {
+        width: calc(100% - 400px);
+        margin: auto;
+        overflow: hidden;
+    }
+    h1 {
+        font-size: 5rem;
+        margin-bottom: 0;
+    }
+    h2 {
+        font-size: 1.2rem;
+        margin-top: 0;
+    }
+    .izq {
+        width: calc(55%);
+        height: 100%;
+        float: left;
+        margin-top: 50px;
+    }
+    .proyector {
+        width: 540px;
+    }
+    .dcha {
+        width: calc(50%);
+        height: 100%;
+        float: right;
+        position: absolute;
+        z-index: -2;
+        right: 200px;
+        top: 0;
+    }
+    #burbuja {
+        position: absolute;
+        width: 13%;
+        float: right;
+        right: 450px;
+        bottom: 80px;
+    }
+    #burbuja img {
+        animation: 8s rotate linear infinite;
+    }
+    .tercio {
+        width: calc(30%);
+        margin: 10px 20px 30px 0;
+        float: left;
+    }
+    .tercio img{
+        border-radius: 10px;
+    }
+    #coin {
+        position: absolute;
+        left: 800px;
+        z-index: -1;
+    }
+    /* hoja documentación */
+    #h1doc {
+        font-size: 3rem;
+        text-align: center;
+    }
+    #h2doc {
+        font-size: 2rem;
+        text-align: center;
+        margin: 40px 0;
+    }
+    #h3doc {
+        font-size: 1.4rem;
+        margin-top: 15px;
+    }
+    .cuarto {
+        width: calc(25%);
+        float: left;
+        padding: 0 10px;
+        text-align: center;
+    }
+    .cuarto:hover {
+        transform: translate(0,-10px);
+    }
+    .docs {
+        width: calc(25%);
+        float: left;
+        padding: 30px 50px;
+        color: white;
+    }
+    #docs1 {
+        background: url(imagenes/image.png) no-repeat center;
+    }
+    #docs2 {
+        background: url(imagenes/care-cooking.jpg)   no-repeat  center;
+    }
+    #docs3 {
+        background: url(imagenes/changers-testimonio.jpg) no-repeat  center;
+    }
+    #docs4 {
+        background: url(imagenes/donaciones.jpg) no-repeat  center;
+    }
+    .contenedor {
+        width: calc(100%);
+        overflow: hidden;
+    }
+    .contenido {
+        width: calc(100%);
+        margin-top: 160px;
+        text-shadow: 2px 2px black;
+    }
+    .contenido a {
+        background: white;
+        color: black;
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 20px 20px;
+        text-shadow: none;
+    }
+    .contenido a:hover {
+        background: #51EBD3;
+    }
+    /* Formulario */
+    table {
+        margin: auto;
+        font-size: 1.6rem;
+    }
+    .grande {
+        width: 400px;
+        font-size: 1.2rem;
+    }
+    .mediano {
+        width: 200px;
+        font-size: 1.2rem;
+    }
+    .pequeno {
+        width: 100px;
+        font-size: 1.2rem;
+    }
+    #envio {
+        padding: 10px 15px;
+        background: white;
+        border: white;
+        font-size: 1.2rem;
+        border-radius: 10px 10px;
+        float: right;
+        margin: 40px 0;
+    }
+    #condiciones {
+        font-size: 1.2rem;
+        float: left;
+    }
+    /* hoja términos */
+    #h2ter {
+        font-size: 1.7rem;
+        text-align: left;
+        margin-top: 40px;
+    }
+    #h3ter {
+        font-size: 1.4rem;
+        text-align: left;
+    }
+
+/*** FOOTER ***/
+    footer {
+        margin-top: 40px;
+    }
+    #mensaje {
+        width: 400px;
+        margin: auto;
+    }
+    h3 {
+        font-size: 2.5rem;
+        text-align: center;
+        margin: 0;
+        padding-top: 5px
+    }
+    #rrss {
+        overflow: hidden;
+        width: 100%;
+        padding-right: 30px;
+        margin-top: 0;
+        text-align: center;
+    }
+    .icono {
+        float: right;
+        margin: 10px;
+        text-decoration: none;
+        color: black;
+    }
+    .icono:hover {
+        box-shadow: 0 0 8px 8px white;
+        border-radius: 50%;
+    }
+    .creador {
+        width: 250px;
+        margin-left: 44%;
+    }
